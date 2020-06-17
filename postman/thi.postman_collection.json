@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "62e07c5e-b1d8-4324-8097-5ec5877ccd06",
+		"_postman_id": "624ad8bf-63b7-49eb-bb79-bdc7fca69752",
 		"name": "thi",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -390,11 +390,21 @@
 				{
 					"name": "create",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNWVlYTAxOTQxNjljY2MyZWIwNTUxNDQxIiwiaWF0IjoxNTkyMzk0MTMyLCJleHAiOjE1OTI0MDQxMzJ9.R-BKeKeFp8ZrBjHljORYVdCH81oKlW60RDzrcmiZexw",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Pizza\"\n}",
+							"raw": "{\n\t\"name\": \"Pizza\",\n\t\"image\": \"abc\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -535,11 +545,21 @@
 				{
 					"name": "create",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNWVlYTAxOTQxNjljY2MyZWIwNTUxNDQxIiwiaWF0IjoxNTkyMzk0MTMyLCJleHAiOjE1OTI0MDQxMzJ9.R-BKeKeFp8ZrBjHljORYVdCH81oKlW60RDzrcmiZexw",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"cart\": {\n\t\t\"user\": \"5ed1f9e637322e214ffa6096\",\n\t\t\"orders\": [\n\t\t\t{\n\t\t\t\t\"food\": \"5ed1fa0537322e214ffa6097\",\n\t\t\t\t\"quantity\": 5\n\t\t\t}\n\t\t]\n\t}\n}",
+							"raw": "{\n\t\"cart\": {\n\t\t\"user\": \"5ed1f9e637322e214ffa6096\",\n\t\t\"orders\": [\n\t\t\t{\n\t\t\t\t\"food\": \"5ed1fa0537322e214ffa6097\",\n\t\t\t\t\"quantity\": 5\n\t\t\t}\n\t\t],\n\t\t\"status\": 0\n\t}\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -564,11 +584,21 @@
 				{
 					"name": "update",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNWVlYTAxOTQxNjljY2MyZWIwNTUxNDQxIiwiaWF0IjoxNTkyMzk0MTMyLCJleHAiOjE1OTI0MDQxMzJ9.R-BKeKeFp8ZrBjHljORYVdCH81oKlW60RDzrcmiZexw",
+									"type": "string"
+								}
+							]
+						},
 						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"cart_id\": \"5ed205021874ad2263faf4ff\",\n\t\"cart\": {\n\t\t\"user\": \"5ed1f9e637322e214ffa6096\",\n\t\t\"orders\": [\n\t\t\t{\n\t\t\t\t\"food\": \"5ed1fa0537322e214ffa6097\",\n\t\t\t\t\"quantity\": 10\n\t\t\t}\n\t\t]\n\t}\n}",
+							"raw": "{\n\t\"cart_id\": \"5eea028a30558e19c8f91fbf\",\n\t\"cart\": {\n\t\t\"user\": \"5ed1f9e637322e214ffa6096\",\n\t\t\"orders\": [\n\t\t\t{\n\t\t\t\t\"food\": \"5ed1fa0537322e214ffa6097\",\n\t\t\t\t\"quantity\": 10\n\t\t\t}\n\t\t],\n\t\t\"status\": 1\n\t}\n}",
 							"options": {
 								"raw": {
 									"language": "json"

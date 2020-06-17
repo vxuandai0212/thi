@@ -9,6 +9,7 @@ const add = async function(req, res){
     let category_info = {} 
     category_info.name = req.body.name;
     category_info.slug = slugify(category_info.name);
+    category_info.image = req.body.image;
 
     [err, category] = await to(CategoryService.add(category_info));
     if(err) return ReE(res, err, 422);

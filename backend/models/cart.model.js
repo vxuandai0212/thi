@@ -8,7 +8,8 @@ let OrderDetail = mongoose.Schema({
 
 let CartSchema = mongoose.Schema({
     user: {type: mongoose.Schema.ObjectId, ref: 'User'},
-    orders: [OrderDetail]
+    orders: [OrderDetail],
+    status: {type: Number}
 }, {timestamps: true});
 
 CartSchema.methods.toWeb = function(){

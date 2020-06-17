@@ -6,7 +6,8 @@ let CategorySchema = mongoose.Schema({
     foods: [
         {type: mongoose.Schema.ObjectId, ref: 'Food'}
     ],
-    slug: {type:String}
+    slug: {type:String},
+    image: {type: String}
 }, {timestamps: true});
 
 
